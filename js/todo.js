@@ -10,8 +10,12 @@
         const spanElement = document.createElement("span")
         const buttonElement = document.createElement("button")
         const liElement = document.createElement("li")
-        
+        const spanDivElement = document.createElement("div")
+        const buttonDivElement = document.createElement("div")
+
         buttonElement.className = "todo-list-button-remove"
+        spanDivElement.className = "todo-list-span-div"
+        buttonDivElement.className = "todo-list-button-remove-div"
 
         spanElement.innerHTML = text
         buttonElement.innerHTML = "Remover"
@@ -22,8 +26,11 @@
             liElement.parentNode.removeChild(liElement)
         }
 
-        liElement.appendChild(spanElement)
-        liElement.appendChild(buttonElement)
+        spanDivElement.appendChild(spanElement)
+        buttonDivElement.appendChild(buttonElement)
+
+        liElement.appendChild(spanDivElement)
+        liElement.appendChild(buttonDivElement)
 
         return liElement        
     };

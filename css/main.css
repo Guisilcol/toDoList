@@ -84,6 +84,20 @@ html, body{
     margin: 5px;
 }
 
+.todo-list-button-remove-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todo-list-span-div{
+    max-width: 30%;
+    min-width: 30%;
+    width: 30%;
+    height: auto;
+    overflow-wrap: break-word;
+}
+
 ul{
     width: 100%;
 }
