@@ -13,14 +13,17 @@
         const spanDivElement = document.createElement("div")
         const buttonDivElement = document.createElement("div")
 
+
+        //Adição das classes necessárias
         buttonElement.className = "todo-list-button-remove"
         spanDivElement.className = "todo-list-span-div"
         buttonDivElement.className = "todo-list-button-remove-div"
 
+        //Inserção dos textos HTML
         spanElement.innerHTML = text
         buttonElement.innerHTML = "Remover"
 
-        //Remove o <li> criado
+        //Função que remove o <li> criado
         buttonElement.onclick = (event) => {
             event.preventDefault()
             liElement.parentNode.removeChild(liElement)
