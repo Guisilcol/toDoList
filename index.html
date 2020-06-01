@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    
+    <div class="app">
+        <div class="input">
+            <h1>Adicionar Tarefa</h1>
+            <form id="input-form" class="input-form" action="">
+                <input type="text" name="input-task">
+                <button type="submit" form="input-form" class="submit-button">Adicionar</button>
+                <br><br> <span class="input-task-error hidden">Texto informado inválido</span>
+            </form>
+            
+        </div>
+        
+        <div class="todo">
+            <ul class="todo-list" id="todo-list">
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/input.js"></script>
+    <script src="./js/todo.js"></script>
+
+</body>
+</html>
